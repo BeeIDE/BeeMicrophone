@@ -9,8 +9,8 @@ Blockly.Python['noise_sensor'] = function (block) {
    Blockly.Python.definitions_['from_BeeMic_import_BeeMic'] = 'from BeeMic import BeeMic';
 
    var port = block.getFieldValue('port');
-   Blockly.Python.definitions_['micSensor_BeeMic'] = `micSSensor = BeeMic(bee.${port})`;
-   var code = `micSSensor.read()`;
+   Blockly.Python.definitions_['micSensor_BeeMic'] = `micSensor = BeeMic(bee.${port})`;
+   var code = `micSensor.read()`;
    return [code, Blockly.Python.ORDER_NONE];
 };
 
@@ -21,7 +21,7 @@ Blockly.Python['noise_threshold'] = function (block) {
 
    var port = block.getFieldValue('port');
    var threshold = Blockly.Python.valueToCode(block, 'threshold', Blockly.Python.ORDER_ATOMIC);
-   Blockly.Python.definitions_['micSensor_BeeMic'] = `micSSensor = BeeMic(bee.${port})`;
-   var code = `micSSensor.threshold(${threshold})`;
+   Blockly.Python.definitions_['micSensor_BeeMic'] = `micSensor = BeeMic(bee.${port})`;
+   var code = `micSensor.threshold(${threshold})`;
    return [code, Blockly.Python.ORDER_NONE];
 };
