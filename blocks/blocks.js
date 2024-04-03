@@ -7,6 +7,7 @@ Blockly.defineBlocksWithJsonArray([
       {
         "type": "field_grid_dropdown",
         "name": "port",
+        "columns": 2,
         "options": [
           ["", ""],
           ["PORT2", "PORT2"],
@@ -32,7 +33,7 @@ Blockly.defineBlocksWithJsonArray([
   },
   {
     "type": "noise_threshold",
-    "message0": "%3 %1 if sound > %2 %?",
+    "message0": "%3 %2 if sound > %1 %?",
     "args0": [
       {
         "type": "input_value",
