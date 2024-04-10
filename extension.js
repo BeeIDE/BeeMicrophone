@@ -4,7 +4,7 @@
     author: "BeeBlock",
     category: "Sensors",
     version: "1.0.0",
-    icon: "/static/mic.png", // Category icon
+    icon: "/static/mic-ico.png", // Category icon
     color: "#0050a1", // Category color (recommend some blocks color)
     blocks: [ // Blocks in Category
         "noise_sensor",
